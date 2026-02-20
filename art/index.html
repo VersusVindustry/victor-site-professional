@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Victor Sipka's portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body class="MAIN">
+    <div id="TOP-BAR">
+        <div class="top-bar-button">
+            <a class="no-underline" href="../index.html">HOME</a>
+        </div>
+        <div class="top-bar-button">
+            <a class="no-underline" href="index.html">GALLERY</a>
+        </div>
+    </div>
+    <div id="SIDE-BAR">
+        <h1 onclick="scrollToSection('paintings')" class="TITLE interactable">PAINTINGS</h1>
+        <h1 onclick="scrollToSection('CA')" class="TITLE interactable">CONCRETE ABYSS</h1>
+        <h1 onclick="scrollToSection('3D')" class="TITLE interactable">3D</h1>
+    </div>
+    <div class="display-container">
+        <div id="button-container">
+            <button id="exit" class="img-inspect-button" onclick="closeImageView()">
+                <img class="button-icon" src="../icons/exit.png" alt="">
+            </button>
+            <button id="increase-zoom" class="img-inspect-button" onclick="changeZoom(10)"><img class="button-icon" src="../icons/zoomin.png" alt=""></button>
+            <button id="decrease-zoom" class="img-inspect-button" onclick="changeZoom(-10)"><img class="button-icon" src="../icons/zoomout.png" alt=""></button>
+        </div>
+        <div class="img-display-container">
+            <img src="" class="display-image">
+            <video hidden class="display-video" src="" controls autoplay>
+                BROWSER DOES NOT SUPPORT VIDEOS
+            </video>
+        </div>
+        <div class="text-box">
+            blah
+        </div>
+    </div>
+    
+    <div id="GALLERY" class="detectLink">
+        
+        <div class="category">
+            <h1 id="paintings">Paintings</h1>
+            <div class="art-grid">
+                <div class="art-item">
+                    <a href="img/Paintings/contact.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/contact.png" alt="Quick painting i did of the aliens, a hypothetical first contact. The joke was an over eager scientist goes in for a photo and quickly gets humbled heheh.">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/groundskeeper.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/groundskeeper.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/CMC CAPTAIN.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/CMC CAPTAIN.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/fbx.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/fbx.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/Geliloper.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/Geliloper.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/mecha.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/mecha.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/corruai.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/corruai.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/unity.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/unity.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/reality.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/reality.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/Nymph.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/Nymph.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/The Wastes.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/The Wastes.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/hunter.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/hunter.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/Paintings/wholesomeakibelyuri.png" target="_blank">
+                        <img class="preview-img" src="img/Paintings/wholesomeakibelyuri.png" alt="">  
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h1 id="CA">Concrete Abyss</h1>
+            <h2>Role: Primary Artist (3D, Textures, Shaders, Map geometry, Concept Art)</h2>
+            <div class="art-grid">
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/TurretDeploy.mp4" target="_blank">
+                        <video class="preview-img" src="img/ConcreteAbyss/TurretDeploy.mp4#t=0.5" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/DefSuit.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/DefSuit.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/EnforcerSuit.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/EnforcerSuit.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/Roughneck.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/Roughneck.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/BackpackConcepts.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/BackpackConcepts.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/logo.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/logo.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/Vendy.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/Vendy.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/KIY.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/KIY.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/SirenConcept.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/SirenConcept.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/ISD_Suit.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/ISD_Suit.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/Guns.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/Guns.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/playerconcept.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/playerconcept.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/ConcreteAbyss/Crawler.png" target="_blank">
+                        <img class="preview-img" src="img/ConcreteAbyss/Crawler.png" alt="">  
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h1 id="3D">3D</h1>
+            <div class="art-grid">
+                <div class="art-item">
+                    <a href="img/3D/knight showcase.mp4" target="_blank">
+                        <video class="preview-img" src="img/3D/knight showcase.mp4#t=0.5" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/knight.png" target="_blank">
+                        <img class="preview-img" src="img/3D/knight.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/council_dance.mp4" target="_blank">
+                        <video class="preview-img" src="img/3D/council_dance.mp4#t=0.5" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/council blink.mp4" target="_blank">
+                        <video class="preview-img" src="img/3D/council blink.mp4#t=0.5" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/gelihat.mp4" target="_blank">
+                        <video class="preview-img" src="img/3D/gelihat.mp4#t=0.5" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/corrucrew.png" target="_blank">
+                        <img class="preview-img" src="img/3D/corrucrew.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/riskofdivers.png" target="_blank">
+                        <img class="preview-img" src="img/3D/riskofdivers.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/phage.png" target="_blank">
+                        <img class="preview-img" src="img/3D/phage.png" alt="">  
+                    </a>
+                </div>
+                 <div class="art-item">
+                    <a href="img/3D/render3.png" target="_blank">
+                        <img class="preview-img" src="img/3D/render3.png" alt="">  
+                    </a>
+                </div>
+                <div class="art-item">
+                    <a href="img/3D/LGHPRender.png" target="_blank">
+                        <img class="preview-img" src="img/3D/LGHPRender.png" alt="">  
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let displayContainer = document.querySelector('.display-container')
+        let displayImage = document.querySelector('.display-image')
+        let displayVideo = document.querySelector('.display-video')
+
+        let detectLink = document.querySelector('.detectLink')
+        let imageLinks = detectLink.querySelectorAll('a')
+        let text_box = document.querySelector('.text-box')
+
+        const createImageViews = () => {
+            imageLinks.forEach((link)=>{
+                if (link.href == null || link.href.includes('img') == false){
+                    return
+                } 
+                //video!!
+                else if (link.href.includes('.mp4') == true){
+                    link.addEventListener("click",(event)=>{
+                        event.preventDefault()
+                        displayImage.hidden = true;
+                        displayVideo.src = link.href
+                        displayVideo.hidden = false;
+                        text_box.textContent = link.querySelector('video').alt
+                        displayContainer.classList.add('show-block')
+                    })
+                }
+                else {
+                    link.addEventListener("click",(event)=>{
+                        event.preventDefault()
+                        displayVideo.hidden = true;
+                        displayImage.src = link.href
+                        displayImage.hidden = false;
+                        text_box.textContent = link.querySelector('img').alt
+                        displayContainer.classList.add('show-block')
+                    })
+                }
+            })
+        }
+        createImageViews()
+        var zoom = 100
+        function changeZoom(amount){
+                if(zoom > Math.abs(amount) | zoom < 200-Math.abs(amount)){
+                    zoom+=amount
+                    displayImage.style.width = zoom+'%'
+                    displayVideo.style.width = zoom+'%'
+                }
+            
+        }
+        function closeImageView(){
+            displayContainer.classList.remove('show-block')
+            displayVideo.pause()
+        }
+
+        function scrollToSection(sectionId) {
+            const targetElement = document.getElementById(sectionId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' }); // 'smooth' for animated scroll
+            }
+        }
+    </script>
+</body>
+</html>

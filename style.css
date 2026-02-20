@@ -1,0 +1,204 @@
+.MAIN{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+}
+
+.MAIN-PAGE{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#INFO-BOX{
+    background-color: black;
+    position: absolute;
+    top: 6vh;
+    left: 25%;
+    right: 25%;
+    bottom: 0%;
+    padding: 20px;
+}
+
+.TITLE{
+    background-color: white;
+    color: black;
+}
+
+.CENTER{
+    text-align: center;
+}
+
+.TEXT-LEFT{
+    float: left;
+}
+
+.TEXT-RIGHT{
+    float: right;
+}
+
+.interactable{
+    cursor: pointer;
+}
+
+
+#TOP-BAR{
+    background-color: black;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    height: 6vh;
+    z-index: 3;
+}
+
+#SIDE-BAR{
+    position: fixed;
+    left: 0%;
+    right: 82%;
+    top: 6vh;
+    bottom: 0%;
+    padding: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: white black;
+    z-index: 1;
+    font-size: 1vw;
+}
+.top-bar-button{
+    color: white;
+    padding: 1vw;
+    text-align: center;
+}
+
+.no-underline {
+  text-decoration: none;
+   color: inherit;
+}
+
+#GALLERY{
+    position: absolute;
+    overflow-x: hidden;
+    top: 6vh;
+}
+
+.category{
+    background-color: rgb(7, 7, 7);
+    background-image: url("icons/bgX.png");
+    color: white;
+    padding: 25px;
+    width: 80%;
+    float: right;
+}
+
+.art-grid{
+    width: 100%;
+    columns: 3;
+}
+
+.preview-img{
+    width: 100%;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 15px;
+}
+
+.preview-img:hover{
+    animation: hover 0.1s ease-in-out;
+}
+
+.art-item{
+    flex: auto auto auto;
+    width: 90%;
+}
+
+.display-container{
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    display: none;
+    width: 90%;
+    height: 90%;
+    grid-template-columns: 80% 20%;
+    z-index: 3;
+}
+
+.img-display-container {
+    width: 100%;
+    overflow: scroll;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    scrollbar-color: white black;
+}
+
+.show-block{
+    display: grid;
+}
+
+.display-image{
+    width: 100%;
+}
+
+.display-video{
+    width: 100%;
+}
+
+.text-box{
+    border: white solid 2px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#button-container{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.img-inspect-button{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    pointer-events:all;
+    border: white solid 2px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.img-inspect-button:hover{
+    background-color: rgb(37, 37, 37);
+}
+
+#increase-zoom{
+float:right;
+}
+
+#decrease-zoom{
+float:right;
+}
+
+
+.button-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.noPointer{
+    pointer-events: none;
+}
+
+@keyframes hover {
+  0%{transform: rotate(0deg) translateY(-5px);}
+  30% {transform: rotate(5deg)translateY(0px);}
+  100%{transform: rotate(0deg)}
+}
